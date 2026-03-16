@@ -1,0 +1,20 @@
+{
+  "name": "adr-skills",
+  "version": "0.1.0",
+  "description": "ADR auto-generator MCP server for Claude Code",
+  "main": "index.js",
+  "type": "module",
+  "bin": {
+    "adr-skills": "./index.js"
+  },
+  "scripts": {
+    "start": "node index.js"
+  },
+  "dependencies": {
+    "@anthropic-ai/sdk": "^0.79.0",
+    "@modelcontextprotocol/sdk": "^1.27.1",
+    "better-sqlite3": "^12.8.0",
+    "dotenv": "^17.3.1",
+    "zod": "^4.3.6"
+  }
+}

@@ -3,6 +3,9 @@
   "name": "adr-skills",
   "description": "Automatically generates Architecture Decision Records (ADRs) from Claude Code conversations using Claude Opus. Features AI quality review, duplicate detection, dependency graph, and stale ADR alerts.",
   "license": "MIT",
+  "build": {
+    "steps": ["pnpm install --frozen-lockfile=false"]
+  },
   "tools": [
     "save_session",
     "generate_adr",

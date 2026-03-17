@@ -1,14 +1,43 @@
 {
   "name": "adr-skills",
   "version": "0.1.0",
-  "description": "ADR auto-generator MCP server for Claude Code",
+  "description": "MCP server that auto-generates Architecture Decision Records from Claude Code conversations using Claude Opus",
   "main": "index.js",
   "type": "module",
   "bin": {
     "adr-skills": "./index.js"
   },
   "scripts": {
-    "start": "node index.js"
+    "start": "node index.js",
+    "build": "echo 'No build step required'"
+  },
+  "keywords": [
+    "mcp",
+    "mcp-server",
+    "claude",
+    "claude-code",
+    "adr",
+    "architecture-decision-record",
+    "model-context-protocol",
+    "anthropic"
+  ],
+  "mcpName": "io.github.wooxogh/adr-skills",
+  "author": "wooxogh",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/wooxogh/adr-mcp-setup.git"
+  },
+  "homepage": "https://github.com/wooxogh/adr-mcp-setup#readme",
+  "files": [
+    "index.js",
+    "db.js",
+    "adr.js",
+    "hook.js",
+    ".env.example"
+  ],
+  "engines": {
+    "node": ">=18"
   },
   "dependencies": {
     "@anthropic-ai/sdk": "^0.79.0",

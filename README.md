@@ -4,6 +4,8 @@
 
 > **TL;DR:** Install once, and every Claude Code session ends with a structured ADR saved to `~/.adr-mcp/adrs/` — no manual writing required.
 
+[![adr-skills MCP server](https://glama.ai/mcp/servers/wooxogh/adr-mcp-setup/badges/card.svg)](https://glama.ai/mcp/servers/wooxogh/adr-mcp-setup)
+
 ## What problem does this solve?
 
 Engineering teams make dozens of architectural decisions every week — which database to use, how to handle auth, whether to go monolith or microservices — but rarely write them down. Months later, nobody remembers why Redis was chosen over Memcached, or why the team avoided GraphQL.

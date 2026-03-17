@@ -1,4 +1,4 @@
-import Database from 'better-sqlite3';
+import { DatabaseSync } from 'node:sqlite';
 import path from 'path';
 import fs from 'fs';
 import os from 'os';
@@ -8,7 +8,7 @@ const DB_PATH = path.join(DB_DIR, 'sessions.db');
 
 if (!fs.existsSync(DB_DIR)) fs.mkdirSync(DB_DIR, { recursive: true });
 
-const db = new Database(DB_PATH);
+const db = new DatabaseSync(DB_PATH);
 
 db.exec(`
   CREATE TABLE IF NOT EXISTS sessions (

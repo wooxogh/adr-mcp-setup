@@ -1,0 +1,17 @@
+{
+  "$schema": "https://glama.ai/mcp/glama.schema.json",
+  "name": "adr-skills",
+  "description": "Automatically generates Architecture Decision Records (ADRs) from Claude Code conversations using Claude Opus. Features AI quality review, duplicate detection, dependency graph, and stale ADR alerts.",
+  "license": "MIT",
+  "tools": [
+    "save_session",
+    "generate_adr",
+    "review_adr",
+    "update_adr_status",
+    "link_adrs",
+    "get_adr_graph",
+    "check_stale_adrs",
+    "search_decisions",
+    "get_timeline"
+  ]
+}
